@@ -4,9 +4,13 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class EditActivity extends AppCompatActivity {
 
@@ -14,6 +18,8 @@ public class EditActivity extends AppCompatActivity {
     EditText etContent;
     Button btnUpdate, btnDelete;
     Note data;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
