@@ -50,7 +50,8 @@ public class EditActivity extends AppCompatActivity {
                 DBHelper dbh = new DBHelper(EditActivity.this);
                 dbh.deleteNote(data.getId());
                 dbh.close();
-                finish();
+                Intent i = new Intent(EditActivity.this,MainActivity.class);
+                startActivity(i);
             }
         });
 
